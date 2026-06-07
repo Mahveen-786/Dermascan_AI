@@ -1,0 +1,54 @@
+{
+  "cnn_scratch": {
+    "accuracy": 32.02,
+    "balanced_acc": 54.97,
+    "macro_f1": 29.11,
+    "mel_sensitivity": 76.23,
+    "mel_specificity": 63.24,
+    "mel_auroc": 0.799,
+    "inference_ms": 1.11,
+    "params": 617383
+  },
+  "resnet18_pt": {
+    "accuracy": 42.74,
+    "balanced_acc": 63.22,
+    "macro_f1": 38.49,
+    "mel_sensitivity": 81.61,
+    "mel_specificity": 70.71,
+    "mel_auroc": 0.845,
+    "inference_ms": 2.82,
+    "params": 11172423
+  },
+  "vit_scratch": {
+    "accuracy": 34.41,
+    "balanced_acc": 54.14,
+    "macro_f1": 32.32,
+    "mel_sensitivity": 77.13,
+    "mel_specificity": 70.03,
+    "mel_auroc": 0.8154,
+    "inference_ms": 2.49,
+    "params": 2730055
+  },
+  "vit_b16_pt": {
+    "accuracy": 23.14,
+    "balanced_acc": 55.62,
+    "macro_f1": 30.81,
+    "mel_sensitivity": 87.89,
+    "mel_specificity": 55.11,
+    "mel_auroc": 0.83,
+    "inference_ms": 15.39,
+    "params": 85804039
+  },
+  "class_names": [
+    "actinic_keratosis",
+    "basal_cell_carcinoma",
+    "benign_keratosis",
+    "dermatofibroma",
+    "melanoma",
+    "melanocytic_nevus",
+    "vascular_lesion"
+  ],
+  "melanoma_idx": 4,
+  "dataset": "DermaMNIST (HAM10000)",
+  "research_question": "How much does pretraining matter vs architecture for medical imaging?"
+}
